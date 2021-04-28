@@ -1,38 +1,496 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+.bg-img {
+  /* The image used */
+  background-image: url("http://localhost:3000/am18.jpeg");
+
+  min-height: 800px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+
+
+  .about{
+     background-color: rgb(240, 240, 15); 
+     background-size:auto;
+ 
+  }
+
+
+
+
+  /* loginComponent */
+  .button {   
+    background-color:rgb(91, 236, 91);
+    color: white;
+    padding: 7px 10px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    width: 15%;   
+      } 
+  .button:hover {
+        opacity: 0.8;
+      }  
+  
+  .input {   
+   width: 30%;   
+   margin: 1px 0;  
+   padding: 6px 10px;   
+   display: inline-block;   
+   border: 1px solid green;   
+   box-sizing: border-box;   
+  }
+    
+ 
+  .container {
+        width: 1000%; 
+        margin: 10px 0;
+        padding: 100px; 
+  }  
+       
+  
+   .example1 {
+    max-width: 100%;
+      height: auto;
+    padding: 150px;
+    background: url(http://localhost:3000/amss1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    background-position: center;
+          
+  }
+  #h1{
+    color:rgb(60, 19, 173)
+  }
+
+  /* loginComponentEnds */
+  
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+  #leftbox {
+    float:left; 
+    
+   
+}
+#middlebox{
+    float:left; 
+    margin-left:40px;
+   
+   
+}
+#rightbox{
+    float:left;
+    margin-left:40px;
+   
+   
+  
+}
+
+.bg-imgadmin {
+  /* The image used */
+  background-image: url("http://localhost:3000/am7.jpeg");
+
+  min-height: 800px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+.headerh1{
+  color: rgba(177, 228, 39, 0.644);
+  background-color: black;
+  font-size:50px;
+  font-style: italic;
+}
+
+
+/* 
+scroll tag */
+
+
+ 
+ .demo-1 {
+  height: 60px;  
+  overflow: hidden;
+  position: relative;
+ }
+ 
+ .demo-1 h3 {
+  font-style: italic;
+  
+  font-size: 4em;
+  color: rgb(250, 85, 8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
   text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);  
+  transform:translateX(100%);
+  /* Apply animation to this element */  
+  -moz-animation: demo-1 15s linear infinite;
+  -webkit-animation: demo-1 15s linear infinite;
+  animation: demo-1 15s linear infinite;
+ }
+ /* Move it (define the animation) */
+ @-moz-keyframes demo-1 {
+  0%   { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+ }
+ @-webkit-keyframes demo-1 {
+  0%   { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+ }
+ @keyframes demo-1 {
+  0%   { 
+  -moz-transform: translateX(100%); /* Firefox bug fix */
+  -webkit-transform: translateX(100%); /* Firefox bug fix */
+  transform: translateX(100%);     
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Firefox bug fix */
+  -webkit-transform: translateX(-100%); /* Firefox bug fix */
+  transform: translateX(-100%); 
+  }
+ }
+/* scroll tag Ends */
+
+#borderimg1 { 
+  border: 10px solid transparent;
+  padding: 50px;
+  width:50px;
+  border-image-source: url(http://localhost:3000/ambr.png);
+  border-image-repeat: round;
+  border-image-slice: 30;
+  border-image-width: 10px;    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* cards */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* cards edede */
+
+
+.idcolumn {
+  float: left;
+  width: 30%;
+  padding:10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* Remove extra left and right margins, due to padding */
+.idrow {margin:5px;}
+
+/* Clear floats after the columns */
+.idrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .idcolumn {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
   }
 }
+
+/* Style the counter cards */
+.idcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+/* id card ended */
+.example2 {
+  max-width: 100%;
+  font-display:purple;
+  font-style: initial;
+  font-weight: bold;
+  color:black;
+  height: auto;
+  padding: 250px;
+  background: url(http://localhost:3000/amss5.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1700px;
+  background-position: center;
+        
+}
+.example3 {
+  max-width: 100%;
+  font-display:purple;
+  font-style: initial;
+  font-weight: bold;
+  color:black;
+  height: auto;
+  padding: 160px;
+  background-color: chartreuse;
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+.medicinelist {
+  max-width: 100%;
+  font-display:purple;
+  font-family: Verdana, Geneva, Tahoma, sans-serifs;
+  color:red;
+  font-weight:500;
+  font-weight: bold;
+  height: auto;
+  padding: 160px;
+  background-color: greenyellow;
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+.updatecustomer {
+  max-width: 100%;
+  font-display:purple;
+  font-style: initial;
+  font-weight: bold;
+  color:black;
+  height: auto;
+  padding: 250px;
+  /* background: url(http://localhost:3000/am1.jpeg); */
+  background-repeat: no-repeat;
+  background-size: 1700px;
+  background-position: center;
+        
+}
+.customerlist {
+  max-width: 100%;
+  font-display:purple;
+  font-style: initial;
+  font-weight: bold;
+  color:red;
+  height: auto;
+  padding: 120px;
+  background: url(http://localhost:3000/ambr1.png);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+.getordbycust {
+  max-width: 100%;
+  font-display:purple;
+  font-style: initial;
+  font-weight: bold;
+  color:red;
+  height: auto;
+  padding: 220px;
+  background: url(http://localhost:3000/am2.jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+
+.getordbydate {
+  max-width: 100%;
+  font-display:purple;
+  font-style: initial;
+  font-weight: bold;
+  color:green;
+  height: auto;
+  padding: 220px;
+  background: url(http://localhost:3000/am14.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+.updateorder {
+  max-width: 100%;
+  font-display:purple;
+  font-style: initial;
+  font-weight: bold;
+  color:rgb(255, 208, 0);
+  height: auto;
+  padding: 220px;
+  background: url(http://localhost:3000/am16.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+.getordbyid {
+  max-width: 100%;
+  font-display:purple;
+  font-style: initial;
+  font-weight: bold;
+  color:rgb(255, 208, 0);
+  height: auto;
+  padding: 220px;
+  background: url(http://localhost:3000/ayurveda2.jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+.examplehome1 {
+  max-width: 100%;
+    height: auto;
+  padding: 100px;
+  background: url(http://localhost:3000/am21.jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+
+.examplehome2 {
+  max-width: 100%;
+    height: auto;
+  padding: 250px;
+  background: url(http://localhost:3000/am31.jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+}
+.examplehome3 {
+  max-width: 100%;
+    height: auto;
+  padding: 160px;
+  background: url(http://localhost:3000/am12.jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+}
+
+
+.loginbg-img {
+  /* The image used */
+  background-image: url("http://localhost:3000/am18.jpeg");
+
+  min-height: 800px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+
+
+.updatecontainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#mt-4 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#mt-4 td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#mt-4 tr:nth-child(even){background-color: lightgray;}
+#mt-4 tr:nth-child(odd){background-color: lightskyblue;}
+#mt-4 tr:hover {background-color:lightcoral;}
+
+#mt-4 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: pink;
+}
+.list {
+  max-width: 100%;
+    height: auto;
+  padding: 200px;
+  background: url(http://localhost:3000/am11.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+.medicine {
+  max-width: 100%;
+    height: auto;
+  padding: 200px;
+  background: url(http://localhost:3000/amss4.jpeg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+.order {
+  max-width: 100%;
+    height: auto;
+  padding: 200px;
+  background: url(http://localhost:3000/amss15.jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px;
+  background-position: center;
+        
+}
+
+
